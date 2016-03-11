@@ -19,7 +19,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bm-jf-2a7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="498" y="527"/>
+            <point key="canvasLocation" x="334" y="507"/>
         </scene>
         <!--Inroduce For School View Controller-->
         <scene sceneID="djJ-Dg-RGf">
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yb-am-l15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120" y="527"/>
+            <point key="canvasLocation" x="982" y="513"/>
         </scene>
     </scenes>
 </document>

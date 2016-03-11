@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  CYVideoPlayer
+//
+//  Created by dongzb on 16/2/20.
+//  Copyright © 2016年 大兵布莱恩特. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Masonry.h"
+#import "UIImageView+Webcache.h"
+
+
+#endif /* PrefixHeader_pch */
