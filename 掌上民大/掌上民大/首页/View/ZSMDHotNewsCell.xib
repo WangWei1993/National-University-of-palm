@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="newsCell" rowHeight="240" id="KGk-i7-Jjw" customClass="ZSMDHotNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="476" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="476" height="239"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DA5-lD-uVU">
+                        <rect key="frame" x="5" y="5" width="88" height="228"/>
+                        <color key="backgroundColor" red="1" green="0.98883458604433228" blue="0.11277529379730322" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="Gpo-0Q-4SS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大学生实践创新中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1A-En-zgr" userLabel="标题">
+                        <rect key="frame" x="103" y="10" width="365" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOc-uj-hOB">
+                        <rect key="frame" x="0.0" y="238" width="476" height="1"/>
+                        <color key="backgroundColor" red="0.04558655105" green="0.041249427659999997" blue="0.01097776479" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="xCh-1A-iJx"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23人阅读" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMm-P5-9v3" userLabel="阅读人数">
+                        <rect key="frame" x="421" y="213" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JkB-GY-Uhx"/>
+                            <constraint firstAttribute="width" constant="50" id="hqp-Iw-YmO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我知道你在这里呢" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXh-mQ-mnY" userLabel="详情">
+                        <rect key="frame" x="103" y="41" width="308" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="M1A-En-zgr" firstAttribute="leading" secondItem="DA5-lD-uVU" secondAttribute="trailing" constant="10" id="5MR-LM-ZiX"/>
+                    <constraint firstItem="M1A-En-zgr" firstAttribute="top" secondItem="DA5-lD-uVU" secondAttribute="top" constant="5" id="Pxq-OJ-umi"/>
+                    <constraint firstItem="zXh-mQ-mnY" firstAttribute="leading" secondItem="M1A-En-zgr" secondAttribute="leading" id="UYw-fq-Ntt"/>
+                    <constraint firstAttribute="trailing" secondItem="cMm-P5-9v3" secondAttribute="trailing" constant="5" id="VRv-cw-21z"/>
+                    <constraint firstItem="dOc-uj-hOB" firstAttribute="top" secondItem="cMm-P5-9v3" secondAttribute="bottom" constant="5" id="duE-iD-HcP"/>
+                    <constraint firstItem="DA5-lD-uVU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="f9b-5P-4MI"/>
+                    <constraint firstItem="cMm-P5-9v3" firstAttribute="leading" secondItem="zXh-mQ-mnY" secondAttribute="trailing" constant="10" id="gms-Q2-Yuq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="M1A-En-zgr" secondAttribute="trailing" id="hDr-nj-Rw3"/>
+                    <constraint firstItem="dOc-uj-hOB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kUq-Io-Wcm"/>
+                    <constraint firstAttribute="trailing" secondItem="dOc-uj-hOB" secondAttribute="trailing" id="lDJ-QT-lWM"/>
+                    <constraint firstItem="dOc-uj-hOB" firstAttribute="top" secondItem="DA5-lD-uVU" secondAttribute="bottom" constant="5" id="nSS-W4-qM4"/>
+                    <constraint firstAttribute="bottom" secondItem="dOc-uj-hOB" secondAttribute="bottom" id="uDM-XI-L1k"/>
+                    <constraint firstItem="zXh-mQ-mnY" firstAttribute="top" secondItem="M1A-En-zgr" secondAttribute="bottom" constant="10" id="wTB-1D-Psa"/>
+                    <constraint firstItem="DA5-lD-uVU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zM6-1q-2wT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="0.62280143551422573" blue="0.90728862365563756" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="detial" destination="zXh-mQ-mnY" id="edg-VZ-2VJ"/>
+                <outlet property="icon" destination="DA5-lD-uVU" id="LyF-v2-IK4"/>
+                <outlet property="lookCount" destination="cMm-P5-9v3" id="oaj-Vx-MW9"/>
+                <outlet property="title" destination="M1A-En-zgr" id="fug-4z-Eau"/>
+            </connections>
+            <point key="canvasLocation" x="599" y="523"/>
+        </tableViewCell>
+    </objects>
+</document>
