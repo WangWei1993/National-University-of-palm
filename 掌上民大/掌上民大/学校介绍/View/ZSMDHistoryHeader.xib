@@ -7,13 +7,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="8c8-h8-kp7" customClass="ZSMDClassifyView">
-            <rect key="frame" x="0.0" y="0.0" width="180" height="119"/>
+        <view contentMode="scaleToFill" id="hh1-ac-PUo">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="97"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="backgroundColor" red="1" green="0.86616710760000004" blue="0.27256290239999997" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="624" y="437.5"/>
+            <point key="canvasLocation" x="273" y="606.5"/>
         </view>
     </objects>
 </document>

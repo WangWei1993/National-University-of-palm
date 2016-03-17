@@ -12,7 +12,7 @@
 
 + (instancetype)homeNavBar
 {
-    return [[[NSBundle mainBundle] loadNibNamed:@"ZSMDHomeNavBar.plist" owner:nil options:nil] lastObject];
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
 }
 
 @end

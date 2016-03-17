@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ZSMDHomeNavBar : NSObject
+@interface ZSMDHomeNavBar : UIView
 
 + (instancetype)homeNavBar;
 

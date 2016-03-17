@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B603BBC51C983DAC00F16C7F /* ZSMDHistoryContCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B603BBC31C983DAC00F16C7F /* ZSMDHistoryContCell.m */; };
+		B603BBC61C983DAC00F16C7F /* ZSMDHistoryContCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B603BBC41C983DAC00F16C7F /* ZSMDHistoryContCell.xib */; };
+		B603BBCE1C98414A00F16C7F /* ZSMDHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = B603BBCD1C98414A00F16C7F /* ZSMDHistory.m */; };
+		B603BBD11C984AB800F16C7F /* ZSMDHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B603BBD01C984AB800F16C7F /* ZSMDHistoryController.m */; };
+		B603BBD31C984DB100F16C7F /* history.plist in Resources */ = {isa = PBXBuildFile; fileRef = B603BBD21C984DB100F16C7F /* history.plist */; };
+		B603BBD81C98748B00F16C7F /* ZSMDHistoryHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B603BBD71C98748B00F16C7F /* ZSMDHistoryHeader.m */; };
+		B603BBDA1C98749700F16C7F /* ZSMDHistoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = B603BBD91C98749700F16C7F /* ZSMDHistoryHeader.xib */; };
 		B60474101C93114300225EA1 /* avplayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B60474011C93114300225EA1 /* avplayerVC.m */; };
 		B60474111C93114300225EA1 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60474021C93114300225EA1 /* MBProgressHUD.bundle */; };
 		B60474121C93114300225EA1 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B60474041C93114300225EA1 /* MBProgressHUD.m */; };
@@ -54,10 +61,9 @@
 		B64984A11C91817E0039A88E /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B64984911C91817E0039A88E /* UIView+WebCacheOperation.m */; };
 		B64984C31C91895B0039A88E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B64984C21C91895B0039A88E /* ImageIO.framework */; };
 		B64984C71C9191E60039A88E /* ZSMDInroduceForSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64984C61C9191E60039A88E /* ZSMDInroduceForSchoolViewController.m */; };
-		B667BB101C96822100363601 /* ZSMDClassifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = B667BB0D1C96822100363601 /* ZSMDClassifyView.m */; };
-		B667BB111C96822100363601 /* ZSMDClassifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B667BB0E1C96822100363601 /* ZSMDClassifyView.xib */; };
 		B667BB1E1C96B83400363601 /* sectionCell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B667BB1D1C96B83400363601 /* sectionCell.plist */; };
 		B667BB211C96B98500363601 /* ZSMDSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B667BB201C96B98500363601 /* ZSMDSection.m */; };
+		B6836DD81C96EC4800EEC13B /* ZSMDClassifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6836DD71C96EC4800EEC13B /* ZSMDClassifyCell.xib */; };
 		B6C28D941C8FCB2C00B22C78 /* ZSMDButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C28D931C8FCB2C00B22C78 /* ZSMDButton.m */; };
 		B6C28D981C8FDAE200B22C78 /* ZSMDButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C28D971C8FDAE200B22C78 /* ZSMDButton.xib */; };
 		B6C28D9D1C8FE71600B22C78 /* ZSMDIntroduce.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C28D9C1C8FE71600B22C78 /* ZSMDIntroduce.m */; };
@@ -100,6 +106,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B603BBC21C983DAC00F16C7F /* ZSMDHistoryContCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDHistoryContCell.h; sourceTree = "<group>"; };
+		B603BBC31C983DAC00F16C7F /* ZSMDHistoryContCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDHistoryContCell.m; sourceTree = "<group>"; };
+		B603BBC41C983DAC00F16C7F /* ZSMDHistoryContCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMDHistoryContCell.xib; sourceTree = "<group>"; };
+		B603BBCC1C98414A00F16C7F /* ZSMDHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDHistory.h; sourceTree = "<group>"; };
+		B603BBCD1C98414A00F16C7F /* ZSMDHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDHistory.m; sourceTree = "<group>"; };
+		B603BBCF1C984AB800F16C7F /* ZSMDHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDHistoryController.h; sourceTree = "<group>"; };
+		B603BBD01C984AB800F16C7F /* ZSMDHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDHistoryController.m; sourceTree = "<group>"; };
+		B603BBD21C984DB100F16C7F /* history.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = history.plist; path = "学校介绍/View/history.plist"; sourceTree = "<group>"; };
+		B603BBD61C98748B00F16C7F /* ZSMDHistoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDHistoryHeader.h; sourceTree = "<group>"; };
+		B603BBD71C98748B00F16C7F /* ZSMDHistoryHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDHistoryHeader.m; sourceTree = "<group>"; };
+		B603BBD91C98749700F16C7F /* ZSMDHistoryHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMDHistoryHeader.xib; sourceTree = "<group>"; };
 		B60474001C93114300225EA1 /* avplayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avplayerVC.h; sourceTree = "<group>"; };
 		B60474011C93114300225EA1 /* avplayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = avplayerVC.m; sourceTree = "<group>"; };
 		B60474021C93114300225EA1 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -186,18 +203,16 @@
 		B64984C21C91895B0039A88E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		B64984C51C9191E60039A88E /* ZSMDInroduceForSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDInroduceForSchoolViewController.h; sourceTree = "<group>"; };
 		B64984C61C9191E60039A88E /* ZSMDInroduceForSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDInroduceForSchoolViewController.m; sourceTree = "<group>"; };
-		B667BB0D1C96822100363601 /* ZSMDClassifyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDClassifyView.m; sourceTree = "<group>"; };
-		B667BB0E1C96822100363601 /* ZSMDClassifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMDClassifyView.xib; sourceTree = "<group>"; };
-		B667BB0F1C96822100363601 /* ZSMDClassifyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDClassifyView.h; sourceTree = "<group>"; };
 		B667BB1D1C96B83400363601 /* sectionCell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sectionCell.plist; sourceTree = "<group>"; };
 		B667BB1F1C96B98500363601 /* ZSMDSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDSection.h; sourceTree = "<group>"; };
 		B667BB201C96B98500363601 /* ZSMDSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDSection.m; sourceTree = "<group>"; };
+		B6836DD71C96EC4800EEC13B /* ZSMDClassifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMDClassifyCell.xib; sourceTree = "<group>"; };
 		B6C28D921C8FCB2C00B22C78 /* ZSMDButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDButton.h; sourceTree = "<group>"; };
 		B6C28D931C8FCB2C00B22C78 /* ZSMDButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDButton.m; sourceTree = "<group>"; };
 		B6C28D971C8FDAE200B22C78 /* ZSMDButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZSMDButton.xib; sourceTree = "<group>"; };
 		B6C28D9B1C8FE71600B22C78 /* ZSMDIntroduce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSMDIntroduce.h; sourceTree = "<group>"; };
 		B6C28D9C1C8FE71600B22C78 /* ZSMDIntroduce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSMDIntroduce.m; sourceTree = "<group>"; };
-		B6C28D9E1C8FEB5E00B22C78 /* introduces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = introduces.plist; sourceTree = "<group>"; };
+		B6C28D9E1C8FEB5E00B22C78 /* introduces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = introduces.plist; path = "学校介绍/View/introduces.plist"; sourceTree = "<group>"; };
 		B6F8FE9B1C797BE400CB1098 /* 掌上民大.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "掌上民大.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F8FE9F1C797BE400CB1098 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6F8FEA11C797BE400CB1098 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -319,9 +334,7 @@
 				B62B8CF81C93B1F400AD7EC3 /* ZSMDBannerCell.xib */,
 				B62B8D051C93CC6D00AD7EC3 /* ZSMDClassifyCell.h */,
 				B62B8D061C93CC6D00AD7EC3 /* ZSMDClassifyCell.m */,
-				B667BB0D1C96822100363601 /* ZSMDClassifyView.m */,
-				B667BB0E1C96822100363601 /* ZSMDClassifyView.xib */,
-				B667BB0F1C96822100363601 /* ZSMDClassifyView.h */,
+				B6836DD71C96EC4800EEC13B /* ZSMDClassifyCell.xib */,
 				B62B8D0A1C93F19500AD7EC3 /* ZSMDHotNewsCell.h */,
 				B62B8D0B1C93F19500AD7EC3 /* ZSMDHotNewsCell.m */,
 				B62B8D0C1C93F19500AD7EC3 /* ZSMDHotNewsCell.xib */,
@@ -427,6 +440,8 @@
 			children = (
 				B64984C51C9191E60039A88E /* ZSMDInroduceForSchoolViewController.h */,
 				B64984C61C9191E60039A88E /* ZSMDInroduceForSchoolViewController.m */,
+				B603BBCF1C984AB800F16C7F /* ZSMDHistoryController.h */,
+				B603BBD01C984AB800F16C7F /* ZSMDHistoryController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -437,7 +452,12 @@
 				B6C28D921C8FCB2C00B22C78 /* ZSMDButton.h */,
 				B6C28D931C8FCB2C00B22C78 /* ZSMDButton.m */,
 				B6C28D971C8FDAE200B22C78 /* ZSMDButton.xib */,
-				B6C28D9E1C8FEB5E00B22C78 /* introduces.plist */,
+				B603BBC21C983DAC00F16C7F /* ZSMDHistoryContCell.h */,
+				B603BBC31C983DAC00F16C7F /* ZSMDHistoryContCell.m */,
+				B603BBC41C983DAC00F16C7F /* ZSMDHistoryContCell.xib */,
+				B603BBD61C98748B00F16C7F /* ZSMDHistoryHeader.h */,
+				B603BBD71C98748B00F16C7F /* ZSMDHistoryHeader.m */,
+				B603BBD91C98749700F16C7F /* ZSMDHistoryHeader.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -447,6 +467,8 @@
 			children = (
 				B6C28D9B1C8FE71600B22C78 /* ZSMDIntroduce.h */,
 				B6C28D9C1C8FE71600B22C78 /* ZSMDIntroduce.m */,
+				B603BBCC1C98414A00F16C7F /* ZSMDHistory.h */,
+				B603BBCD1C98414A00F16C7F /* ZSMDHistory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -476,10 +498,10 @@
 		B6F8FE9D1C797BE400CB1098 /* 掌上民大 */ = {
 			isa = PBXGroup;
 			children = (
-				B60473FF1C93114300225EA1 /* player */,
-				B60473FA1C92D5FE00225EA1 /* 首页 */,
-				B64984711C91817E0039A88E /* SDWebImage */,
 				B6FA2F2F1C8F51B400420E19 /* Masonry */,
+				B60473FA1C92D5FE00225EA1 /* 首页 */,
+				B60473FF1C93114300225EA1 /* player */,
+				B64984711C91817E0039A88E /* SDWebImage */,
 				B6FA2F291C8F50AC00420E19 /* 学校介绍 */,
 				B6F8FEA11C797BE400CB1098 /* AppDelegate.h */,
 				B6F8FEA21C797BE400CB1098 /* AppDelegate.m */,
@@ -499,6 +521,8 @@
 			children = (
 				B64984BF1C91829C0039A88E /* PrefixHeader.pch */,
 				B6F8FE9F1C797BE400CB1098 /* main.m */,
+				B603BBD21C984DB100F16C7F /* history.plist */,
+				B6C28D9E1C8FEB5E00B22C78 /* introduces.plist */,
 				B667BB1D1C96B83400363601 /* sectionCell.plist */,
 			);
 			name = "Supporting Files";
@@ -673,10 +697,13 @@
 				B667BB1E1C96B83400363601 /* sectionCell.plist in Resources */,
 				B62B8D181C93F5E300AD7EC3 /* ZSMDIMovieCell.xib in Resources */,
 				B62B8CFA1C93B1F400AD7EC3 /* ZSMDBannerCell.xib in Resources */,
+				B6836DD81C96EC4800EEC13B /* ZSMDClassifyCell.xib in Resources */,
 				B6C28D9F1C8FEB5E00B22C78 /* introduces.plist in Resources */,
 				B60474241C931CAB00225EA1 /* ZSMDHomeNavBar.xib in Resources */,
 				B62B8CE21C93AD7200AD7EC3 /* ZSMDSectionCell.xib in Resources */,
+				B603BBC61C983DAC00F16C7F /* ZSMDHistoryContCell.xib in Resources */,
 				B6F8FEAE1C797BE400CB1098 /* LaunchScreen.storyboard in Resources */,
+				B603BBD31C984DB100F16C7F /* history.plist in Resources */,
 				B6C28D981C8FDAE200B22C78 /* ZSMDButton.xib in Resources */,
 				B62FD6781C95C8740022468A /* ZSMDHomeFooter.xib in Resources */,
 				B6F8FEAB1C797BE400CB1098 /* Assets.xcassets in Resources */,
@@ -684,8 +711,8 @@
 				B62B8D0E1C93F19500AD7EC3 /* ZSMDHotNewsCell.xib in Resources */,
 				B60474111C93114300225EA1 /* MBProgressHUD.bundle in Resources */,
 				B62B8D1D1C93F5F600AD7EC3 /* ZSMDILookCell.xib in Resources */,
-				B667BB111C96822100363601 /* ZSMDClassifyView.xib in Resources */,
 				B60474131C93114300225EA1 /* 1.png in Resources */,
+				B603BBDA1C98749700F16C7F /* ZSMDHistoryHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,17 +749,18 @@
 				B6FA2F4A1C8F51B400420E19 /* MASConstraint.m in Sources */,
 				B60474151C93114300225EA1 /* TBPlayer.m in Sources */,
 				B62B8D081C93CC6D00AD7EC3 /* ZSMDClassifyCell.m in Sources */,
-				B667BB101C96822100363601 /* ZSMDClassifyView.m in Sources */,
 				B6C28D9D1C8FE71600B22C78 /* ZSMDIntroduce.m in Sources */,
 				B64984971C91817E0039A88E /* SDWebImageDecoder.m in Sources */,
 				B62B8CF51C93AE3F00AD7EC3 /* ZSMDLaugh.m in Sources */,
 				B6FA2F521C8F51B400420E19 /* ViewController+MASAdditions.m in Sources */,
 				B667BB211C96B98500363601 /* ZSMDSection.m in Sources */,
 				B62B8CDD1C93AD1D00AD7EC3 /* ZSMDHotNews.m in Sources */,
+				B603BBCE1C98414A00F16C7F /* ZSMDHistory.m in Sources */,
 				B64984A11C91817E0039A88E /* UIView+WebCacheOperation.m in Sources */,
 				B649849C1C91817E0039A88E /* UIButton+WebCache.m in Sources */,
 				B62B8CE11C93AD7200AD7EC3 /* ZSMDSectionCell.m in Sources */,
 				B649849A1C91817E0039A88E /* SDWebImageManager.m in Sources */,
+				B603BBC51C983DAC00F16C7F /* ZSMDHistoryContCell.m in Sources */,
 				B6FA2F4C1C8F51B400420E19 /* MASLayoutConstraint.m in Sources */,
 				B60474121C93114300225EA1 /* MBProgressHUD.m in Sources */,
 				B6FA2F4F1C8F51B400420E19 /* NSArray+MASAdditions.m in Sources */,
@@ -740,6 +768,7 @@
 				B6FA2F4E1C8F51B400420E19 /* MASViewConstraint.m in Sources */,
 				B6FA2F4D1C8F51B400420E19 /* MASViewAttribute.m in Sources */,
 				B64984981C91817E0039A88E /* SDWebImageDownloader.m in Sources */,
+				B603BBD11C984AB800F16C7F /* ZSMDHistoryController.m in Sources */,
 				B60474161C93114300225EA1 /* TBVideoRequestTask.m in Sources */,
 				B649849B1C91817E0039A88E /* SDWebImagePrefetcher.m in Sources */,
 				B6FA2F511C8F51B400420E19 /* View+MASAdditions.m in Sources */,
@@ -747,6 +776,7 @@
 				B62B8D1C1C93F5F600AD7EC3 /* ZSMDILookCell.m in Sources */,
 				B649849F1C91817E0039A88E /* UIImageView+HighlightedWebCache.m in Sources */,
 				B64984C71C9191E60039A88E /* ZSMDInroduceForSchoolViewController.m in Sources */,
+				B603BBD81C98748B00F16C7F /* ZSMDHistoryHeader.m in Sources */,
 				B64984951C91817E0039A88E /* SDImageCache.m in Sources */,
 				B64984991C91817E0039A88E /* SDWebImageDownloaderOperation.m in Sources */,
 				B62B8D0D1C93F19500AD7EC3 /* ZSMDHotNewsCell.m in Sources */,

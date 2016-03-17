@@ -28,7 +28,7 @@
             <connections>
                 <outlet property="scrollView" destination="lYn-Gc-LHU" id="3TP-x4-xqp"/>
             </connections>
-            <point key="canvasLocation" x="322.5" y="386"/>
+            <point key="canvasLocation" x="581.5" y="379"/>
         </tableViewCell>
     </objects>
 </document>

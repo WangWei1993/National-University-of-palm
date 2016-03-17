@@ -17,11 +17,15 @@
 #import "ZSMDListenCell.h"
 #import "ZSMDHomeFooter.h"
 #import "ZSMDSection.h"
+#import "ZSMDHomeNavBar.h"
 
 @interface ZSMDHomeViewController () <UITableViewDataSource,UITableViewDelegate>
 
 /** sectionCell */
 @property (nonatomic, strong) NSArray *arrSections;
+
+/** ZSMDHomeNavBar */
+@property (nonatomic, weak) ZSMDHomeNavBar *homeNavBar;
 
 @end
 
@@ -51,8 +55,11 @@
     self.tableView.delegate = self;
     
     // 1. 将系统导航栏隐藏，添加自定义的导航栏
-    self.navigationController.navigationBarHidden = YES;
-    [self setHomeNavBar];
+//    [self.navigationController.navigationBar setBackgroundColor:[UIColor blueColor]];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"header"] forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.barTintColor = [UIColor redColor];
+//    self.navigationController.navigationBarHidden = YES;
+//    [self setHomeNavBar];
     
     // 将tableView置顶显示
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -64,7 +71,7 @@
     self.tableView.showsVerticalScrollIndicator = NO;
     
     // 设置tableView的背景颜色
-    self.tableView.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1];;
+    self.tableView.backgroundColor = [UIColor colorWithRed:247.0/255.0 green:247.0/255.0 blue:247.0/255.0 alpha:1];
     
 }
 
@@ -72,7 +79,17 @@
 #pragma mark - 添加自定义的导航栏
 - (void)setHomeNavBar
 {
-        
+    ZSMDHomeNavBar *homeNavBar = [ZSMDHomeNavBar homeNavBar];
+    self.homeNavBar = homeNavBar;
+    [self.tableView insertSubview:homeNavBar aboveSubview:self.tableView];
+    
+    [self.homeNavBar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(SCREENWIDTH);
+        make.height.mas_equalTo(44);
+        make.top.mas_equalTo(self.tableView);
+        make.left.mas_equalTo(self.tableView);
+    }];
+    
 }
 
 #pragma mark - <UITableViewDataSource>
@@ -287,8 +304,11 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-   
-    
+    if (scrollView.contentOffset.y * 1.0 == 0) {
+        self.navigationController.navigationBar.alpha = 1;
+    }
+    self.navigationController.navigationBar.alpha = scrollView.contentOffset.y * 1.0 / 44;
+    NSLog(@"%f",self.navigationController.navigationBar.alpha);
 }
 
 @end

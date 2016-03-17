@@ -22,15 +22,36 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rka-l2-Fty">
+                    <rect key="frame" x="607" y="0.0" width="50" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Dqe-1j-HjQ"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Nf8-5W-Kdt"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0q-OR-aVP">
+                    <rect key="frame" x="5" y="0.0" width="50" height="87"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="rCz-zI-wbd"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="Y0q-OR-aVP" firstAttribute="leading" secondItem="Kcv-aO-AdE" secondAttribute="leading" constant="5" id="2QS-5N-0iL"/>
+                <constraint firstAttribute="bottom" secondItem="Y0q-OR-aVP" secondAttribute="bottom" id="Ayb-pR-4SZ"/>
+                <constraint firstItem="Rka-l2-Fty" firstAttribute="top" secondItem="Kcv-aO-AdE" secondAttribute="top" id="Dm4-bH-Uno"/>
+                <constraint firstAttribute="bottom" secondItem="Rka-l2-Fty" secondAttribute="bottom" id="U2r-9q-Vcp"/>
                 <constraint firstItem="d87-kV-3s7" firstAttribute="centerY" secondItem="Kcv-aO-AdE" secondAttribute="centerY" id="dkd-47-2zU"/>
+                <constraint firstAttribute="trailing" secondItem="Rka-l2-Fty" secondAttribute="trailing" id="enj-4P-5bM"/>
+                <constraint firstItem="Y0q-OR-aVP" firstAttribute="top" secondItem="Kcv-aO-AdE" secondAttribute="top" id="f7n-Tv-vJ8"/>
                 <constraint firstItem="d87-kV-3s7" firstAttribute="centerX" secondItem="Kcv-aO-AdE" secondAttribute="centerX" id="uP7-WB-j0v"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="525.5" y="526.5"/>
+            <point key="canvasLocation" x="547.5" y="488.5"/>
         </view>
     </objects>
 </document>
