@@ -7,6 +7,7 @@
 //
 
 #import "ZSMDHotNewsCell.h"
+#import "ZSMDHotNews.h"
 
 @interface ZSMDHotNewsCell ()
 @property (weak, nonatomic) IBOutlet UIImageView *icon;
@@ -34,5 +35,13 @@
 }
 
 // 模型传入（设置数值）
+- (void)setNews:(ZSMDHotNews *)news
+{
+    _news = news;
+    self.title.text = news.title;
+    self.detial.text = news.detial;
+    [self.icon sd_setImageWithURL:[NSURL URLWithString:news.icon] placeholderImage:[UIImage imageNamed:@"logo"]];
+//    NSLog(@"%@",news.icon);
+}
 
 @end

@@ -9,6 +9,10 @@
 #import "ZSMDBannerCell.h"
 #import "Masonry.h"
 
+@interface ZSMDBannerCell() <ZYBannerViewDataSource >
+
+@end
+
 @implementation ZSMDBannerCell
 
 + (instancetype)cellWithTableView:(UITableView *)tableView
@@ -24,7 +28,6 @@
     return cell;
     
 }
-
 
 
 @end

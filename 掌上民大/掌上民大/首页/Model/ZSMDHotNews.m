@@ -10,4 +10,21 @@
 
 @implementation ZSMDHotNews
 
+- (instancetype)initWithDict:(NSDictionary* )dict
+{
+    if (self = [super init]) {
+        
+        self.title = dict[@"title"];
+        self.detial = dict[@"detial"];
+        self.icon = dict[@"icon"];
+    }
+    return self;
+    
+}
+
++ (instancetype)hotNewsWithDict:(NSDictionary *)dict
+{
+    return [[self alloc] initWithDict:dict];
+}
+
 @end

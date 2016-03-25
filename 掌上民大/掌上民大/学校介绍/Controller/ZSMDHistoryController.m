@@ -10,6 +10,8 @@
 #import "ZSMDHistoryContCell.h"
 #import "ZSMDHistory.h"
 
+
+
 @interface ZSMDHistoryController () <UITableViewDataSource ,UITableViewDelegate>
 
 /** 数据模型 */
@@ -20,20 +22,20 @@
 @implementation ZSMDHistoryController
 
 // 介绍数组-懒加载
-- (NSArray *)arrHistory
+- (void)loadNewData
 {
-    if (_arrHistory == nil) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"history" ofType:@"plist"];
-        
-        NSMutableArray *arr = [NSMutableArray array];
-        NSArray *arrDic = [NSArray arrayWithContentsOfFile:path];
-        for (NSDictionary *dic in arrDic) {
-            ZSMDHistory *introduce = [ZSMDHistory historyWithDict:dic];
-            [arr addObject:introduce];
-        }
-        _arrHistory = arr;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"history" ofType:@"plist"];
+    
+    NSMutableArray *arr = [NSMutableArray array];
+    NSArray *arrDic = [NSArray arrayWithContentsOfFile:path];
+    for (NSDictionary *dic in arrDic) {
+        ZSMDHistory *introduce = [ZSMDHistory historyWithDict:dic];
+        [arr addObject:introduce];
     }
-    return _arrHistory;
+    self.arrHistory = arr;
+    [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
+
 }
 
 
@@ -48,6 +50,19 @@
     
     // 分割线
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    
+    // 已进入界面就下拉刷新
+    [self loadMessages];
+}
+
+// 下拉刷新加载数据
+- (void)loadMessages
+{
+    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadNewData方法）
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
+    
+    // 马上进入刷新状态
+    [self.tableView.mj_header beginRefreshing];
 }
 
 

@@ -15,6 +15,22 @@
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
+
+/** 1 */
+@property (nonatomic, weak) UIImageView *imageView1;
+
+/** 2 */
+@property (nonatomic, weak) UIImageView *imageView2;
+
+/** 3 */
+@property (nonatomic, weak) UIImageView *imageView3;
+
+/** 4 */
+@property (nonatomic, weak) UIImageView *imageView4;
+
+/** 5 */
+@property (nonatomic, weak) UIImageView *imageView5;
+
 @end
 
 @implementation ZSMDListenCell
@@ -58,12 +74,18 @@
     CGFloat imageH = self.frame.size.height;
     for (int i = 0; i < self.scrollView.subviews.count; i++) {
         UIImageView *imageView = self.scrollView.subviews[i];
-        imageView.frame = CGRectMake(imageW * i + 5, 0, imageW, imageH);
+        imageView.frame = CGRectMake(imageW * i + 5 + i * 10, 0, imageW, imageH);
         
     }
+    
     // 设置ScrollView尺寸
-    self.scrollView.contentSize = CGSizeMake(imageW * self.scrollView.subviews.count, imageH);
+    self.scrollView.contentSize = CGSizeMake(imageW * self.scrollView.subviews.count + self.scrollView.subviews.count * 10, imageH);
 }
 
+- (void)setListen:(ZSMDListen *)listen
+{
+    _listen = listen;
+//    self.
+}
 
 @end

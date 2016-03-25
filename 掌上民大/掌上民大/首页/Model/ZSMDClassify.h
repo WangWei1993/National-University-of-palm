@@ -10,11 +10,22 @@
 
 @interface ZSMDClassify : NSObject
 
-/** 图片 */
+/** 图片0 */
 @property (nonatomic, copy) NSString *icon;
-
-/** 名字 */
-@property (nonatomic, copy) NSString *name;
+/** 图片1 */
+@property (nonatomic, copy) NSString *icon1;
+/** 图片2 */
+@property (nonatomic, copy) NSString *icon2;
+/** 图片3 */
+@property (nonatomic, copy) NSString *icon3;
+/** 图片4 */
+@property (nonatomic, copy) NSString *icon4;
+/** 图片5 */
+@property (nonatomic, copy) NSString *icon5;
+/** 图片6 */
+@property (nonatomic, copy) NSString *icon6;
+/** 图片7 */
+@property (nonatomic, copy) NSString *icon7;
 
 - (instancetype)initWithDict:(NSDictionary *)dict;
 + (instancetype)classifyWithDict:(NSDictionary *)dict;

@@ -10,4 +10,10 @@
 
 @interface ZSMDBanner : NSObject
 
+/** icon */
+@property (nonatomic, copy) NSString *icon;
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
++ (instancetype)bannerWithDict:(NSDictionary *)dict;
+
 @end

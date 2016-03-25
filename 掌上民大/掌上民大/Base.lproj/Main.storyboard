@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t1Z-fk-I3n">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="S2P-D9-i9n">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="Ar1-3u-SFt">
-            <objects>
-                <navigationController id="t1Z-fk-I3n" customClass="ViewController" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uEJ-as-XNP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="L3b-BJ-GUA" kind="relationship" relationship="rootViewController" id="cjO-8i-ARd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9bm-jf-2a7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-409" y="635"/>
-        </scene>
         <!--学校概况-->
         <scene sceneID="djJ-Dg-RGf">
             <objects>
@@ -41,7 +25,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yb-am-l15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1072" y="514"/>
+            <point key="canvasLocation" x="1003" y="570"/>
+        </scene>
+        <!--首页导航控制器-->
+        <scene sceneID="R9x-Qd-ASq">
+            <objects>
+                <navigationController storyboardIdentifier="first" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NM7-qf-uIN" userLabel="首页导航控制器" customClass="ZSMDHomeNavController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u2S-ri-yzi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="L3b-BJ-GUA" kind="relationship" relationship="rootViewController" id="s7L-57-gxI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eB-H5-0pa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-109"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="J0n-wA-gsZ">
+            <objects>
+                <tabBarController id="S2P-D9-i9n" userLabel="TabBarController" customClass="ZSMDTabBarController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="O0f-hC-y3k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wyj-dJ-fVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-859" y="291"/>
         </scene>
         <!--home-->
         <scene sceneID="9K2-au-TX8">
@@ -52,7 +66,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="classifyCell" rowHeight="177" id="IEE-mY-p1S">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="classifyCell" rowHeight="177" id="IEE-mY-p1S" customClass="ZSMDClassifyCell">
                                 <rect key="frame" x="0.0" y="92" width="600" height="177"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IEE-mY-p1S" id="VN7-5H-PQC">
@@ -62,8 +76,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jQo-Wp-Qbh" userLabel="01">
                                             <rect key="frame" x="150" y="0.0" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYe-pP-RlJ">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYe-pP-RlJ" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="创新中心"/>
                                                     <connections>
                                                         <segue destination="whZ-B4-A9b" kind="show" id="NXm-CK-jD6"/>
@@ -81,8 +96,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5wd-7o-L77" userLabel="02">
                                             <rect key="frame" x="300" y="0.0" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xm-9Y-8dO">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xm-9Y-8dO" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="校园资讯"/>
                                                     <connections>
                                                         <segue destination="Wou-JN-Zem" kind="show" id="OuW-gB-JZy"/>
@@ -100,9 +116,12 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rSb-VI-qjs" userLabel="00">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-pB-VkO">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDW-pB-VkO" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
-                                                    <state key="normal" title="学校概况"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="学校概况">
+                                                        <color key="titleColor" red="0.04558655105" green="0.041249427659999997" blue="0.01097776479" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
                                                     <connections>
                                                         <segue destination="uTI-ym-PjU" kind="show" id="RPf-Eb-IOy"/>
                                                     </connections>
@@ -119,8 +138,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4t-ZR-E7g" userLabel="10">
                                             <rect key="frame" x="0.0" y="88" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwi-jh-5a4">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwi-jh-5a4" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="校园随身听"/>
                                                     <connections>
                                                         <segue destination="stI-vN-42U" kind="show" id="G4b-pM-Omb"/>
@@ -138,8 +158,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fc-G0-MNM" userLabel="11">
                                             <rect key="frame" x="150" y="88" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-dO-Oxa">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYe-dO-Oxa" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="i看看"/>
                                                     <connections>
                                                         <segue destination="CD7-1h-gnI" kind="show" id="n8S-jA-hIo"/>
@@ -157,8 +178,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xm7-pt-yrH" userLabel="11">
                                             <rect key="frame" x="300" y="88" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vK2-XU-tQV">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vK2-XU-tQV" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="让你一次笑个够"/>
                                                     <connections>
                                                         <segue destination="Lsf-gh-kuu" kind="show" id="heV-Hg-yCU"/>
@@ -176,8 +198,9 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ht-oY-XhH" userLabel="03">
                                             <rect key="frame" x="450" y="0.0" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-nF-r3p">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZr-nF-r3p" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <state key="normal" title="地图导航"/>
                                                     <connections>
                                                         <segue destination="Vci-Np-D9v" kind="show" id="ECE-e4-kp0"/>
@@ -195,9 +218,10 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avx-ST-1Mx" userLabel="11">
                                             <rect key="frame" x="450" y="88" width="150" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OB-sY-ByC">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OB-sY-ByC" customClass="WWButton">
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
-                                                    <state key="normal" title="近聊"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="好像认识你"/>
                                                     <connections>
                                                         <segue destination="Lsf-gh-kuu" kind="show" id="kd8-h4-Cuy"/>
                                                     </connections>
@@ -247,6 +271,16 @@
                                         <constraint firstItem="rSb-VI-qjs" firstAttribute="top" secondItem="VN7-5H-PQC" secondAttribute="top" id="zIH-r3-iEv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="chuangxinBtn" destination="uYe-pP-RlJ" id="uYe-eu-cjr"/>
+                                    <outlet property="introduceBtn" destination="lDW-pB-VkO" id="les-eo-FcA"/>
+                                    <outlet property="jinliaoBtn" destination="7OB-sY-ByC" id="esa-MB-MiM"/>
+                                    <outlet property="laughBtn" destination="vK2-XU-tQV" id="DUS-iZ-cEw"/>
+                                    <outlet property="listenBtn" destination="Gwi-jh-5a4" id="JzB-c1-PeL"/>
+                                    <outlet property="lookBtn" destination="aYe-dO-Oxa" id="mIa-Ji-dQO"/>
+                                    <outlet property="mapBtn" destination="FZr-nF-r3p" id="iHL-JE-5Pb"/>
+                                    <outlet property="zixunBtn" destination="3Xm-9Y-8dO" id="J2T-Om-91F"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -254,11 +288,68 @@
                             <outlet property="delegate" destination="L3b-BJ-GUA" id="xtG-8r-Au9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="aNZ-bO-UAn"/>
+                    <navigationItem key="navigationItem" id="aNZ-bO-UAn" colorLabel="IBBuiltInLabel-Green">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="qb0-kt-WCT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xJt-2i-y1P"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OeQ-8J-MnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="331" y="514"/>
+            <point key="canvasLocation" x="1003" y="-109"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="oUt-HS-6aw">
+            <objects>
+                <viewController storyboardIdentifier="second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KX2-lN-Azz" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pBD-EZ-ZKA"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVq-Sn-FKv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g9C-EE-JH0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.22441730779999999" green="0.26892151180000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwm-aL-ZSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-763" y="1484"/>
+        </scene>
+        <!--Three View Controller-->
+        <scene sceneID="0mB-L9-Mgn">
+            <objects>
+                <viewController storyboardIdentifier="three" useStoryboardIdentifierAsRestorationIdentifier="YES" id="POm-rW-rgX" customClass="ThreeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VOb-Zv-S8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4x-n0-94h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6q9-yg-iqs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95242964659999996" green="0.63467567110000001" blue="0.55057172409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1b-1R-JAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-763" y="2251"/>
+        </scene>
+        <!--Four View Controller-->
+        <scene sceneID="aqO-0Y-LCy">
+            <objects>
+                <viewController storyboardIdentifier="four" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eYR-Q2-GTz" customClass="FourViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k30-at-TVC"/>
+                        <viewControllerLayoutGuide type="bottom" id="17q-N8-2Kp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5GB-Y4-jAS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.9267302865" blue="0.35215923030000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I34-5V-fRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-763" y="2958"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7Mz-vL-0Ng">

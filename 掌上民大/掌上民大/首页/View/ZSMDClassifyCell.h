@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZSMDClassify;
+
 @interface ZSMDClassifyCell : UITableViewCell
+
+// 数组模型 
+@property (nonatomic, strong) ZSMDClassify *classify;
+
 
 // 定义cell的类方法
 + (instancetype)cellWithTableView:(UITableView *)tableView;

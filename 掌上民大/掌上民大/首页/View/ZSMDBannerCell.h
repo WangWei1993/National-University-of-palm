@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZYBannerView.h"
 
 @class ZSMDBannerCell;
 
@@ -18,8 +19,8 @@
 
 @interface ZSMDBannerCell : UITableViewCell
 
-/** 代理 */
-@property (nonatomic, strong) id<ZSMDBannerCellDelegate> delegate;
+@property (weak, nonatomic) IBOutlet ZYBannerView *banner;
+
 
 // 定义cell的类方法
 + (instancetype)cellWithTableView:(UITableView *)tableView;

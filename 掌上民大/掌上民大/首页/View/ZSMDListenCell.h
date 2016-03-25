@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class ZSMDListen;
+
 @interface ZSMDListenCell : UITableViewCell
+
+/** <#name#> */
+@property (nonatomic, strong) ZSMDListen *listen;
 
 // 定义cell的类方法
 + (instancetype)cellWithTableView:(UITableView *)tableView;

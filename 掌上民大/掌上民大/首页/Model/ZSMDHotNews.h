@@ -10,4 +10,18 @@
 
 @interface ZSMDHotNews : NSObject
 
+/** title */
+@property (nonatomic, copy) NSString *title;
+
+/** detial */
+@property (nonatomic, copy) NSString *detial;
+
+/** icon */
+@property (nonatomic, copy) NSString *icon;
+
+
+
+- (instancetype)initWithDict:(NSDictionary *)dict;
++ (instancetype)hotNewsWithDict:(NSDictionary *)dict;
+
 @end
