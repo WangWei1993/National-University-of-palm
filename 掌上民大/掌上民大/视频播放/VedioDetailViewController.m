@@ -73,8 +73,6 @@
 //一开始的屏幕旋转方向
 - (NSUInteger)supportedInterfaceOrientations
 {
-    NSLog(@"11222111111");
-
     return UIInterfaceOrientationLandscapeLeft;
 }
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
@@ -83,7 +81,6 @@
 }
 
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration{
-    NSLog(@"11111111");
     [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
     __weak typeof(self) weakself = self;
     [UIView animateWithDuration:0 animations:^{
@@ -101,7 +98,6 @@
 
 -(void)playerViewZoomButtonClicked:(JZVideoPlayerView *)view{
     //强制横屏
-    NSLog(@"222222");
     if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)]) {
         SEL selector = NSSelectorFromString(@"setOrientation:");
         
@@ -138,5 +134,7 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 @end

@@ -17,5 +17,5 @@
 #import "FourViewController.h"
 
 @interface ZSMDTabBarController : UITabBarController
-
+@property(nonatomic,weak) ZSMDTabBarView *tabbar;
 @end

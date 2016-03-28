@@ -25,9 +25,6 @@
 // 发布按钮
 @property(nonatomic,weak) ZSMDTabBarButton *button_center;
 
-// 选中按钮
-@property (nonatomic, weak) ZSMDTabBarButton *selectBtn;
-
 @end
 
 @implementation ZSMDTabBarView
@@ -37,10 +34,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setFrame:frame];
-        // 选中按钮
-        ZSMDTabBarButton *btn = [[ZSMDTabBarButton alloc] init];
-        btn.selected = YES;
-        self.selectBtn = btn;
         [self layoutView];
         
     }
@@ -62,9 +55,10 @@
     
     
     ZSMDTabBarButton *button_center = [ZSMDTabBarButton buttonWithType:UIButtonTypeCustom];
+    [button_center addTarget:self action:@selector(btnCenter) forControlEvents:UIControlEventTouchUpInside];
     _button_center = button_center;
     _button_center.adjustsImageWhenHighlighted = YES;
-//    [_button_center setBackgroundImage:[UIImage imageNamed:@"6.png"] forState:UIControlStateNormal];
+    [_button_center setBackgroundImage:[UIImage imageNamed:@"6.png"] forState:UIControlStateNormal];
     
     [_button_center setFrame:CGRectMake(0, 0, 46, 46)];
     
@@ -78,6 +72,10 @@
     [self layoutBtn];
     
 }
+- (void)btnCenter{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"addBtn" object:nil];
+}
+
 
 -(void)layoutBtn
 {
@@ -152,6 +150,8 @@
             break;
     }
 }
+
+
 
 
 @end

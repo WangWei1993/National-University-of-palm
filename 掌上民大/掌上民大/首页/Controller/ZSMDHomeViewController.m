@@ -99,7 +99,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     // banner
     self.bannerView = [[ZYBannerView alloc] init];
     self.bannerView.dataSource = self;
@@ -143,8 +142,10 @@
     // 刷新数据
     [self firstSetupRefresh];
     
+    // 接收通知
+    [self setupNoticefication];
+    
 }
-
 
 #pragma  mark - 加载数据
 -(void)loadNewData:(MJRefreshNormalHeader *)control{
@@ -168,7 +169,7 @@
                     // 创建MDMessage模型对象
                     ZSMDBanner *btnModel = [ZSMDBanner bannerWithDict:dic];
                     [btnArr addObject:btnModel];
-                    NSLog(@"%@",btnModel.icon);
+//                    NSLog(@"%@",btnModel.icon);
                 }
                 _banners = btnArr;
                 
@@ -546,6 +547,67 @@
 //    }
 //    self.navigationController.navigationBar.alpha = scrollView.contentOffset.y * 1.0 / 44;
 //    NSLog(@"%f",self.navigationController.navigationBar.alpha);
+}
+
+
+#pragma mark - segue跳转
+- (IBAction)intronduce:(id)sender {
+    // 进行判断跳转到那个界面
+    [self performSegueWithIdentifier:@"introduce" sender:nil];
+}
+
+#pragma mark - 接收通知
+- (void)setupNoticefication
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(btn0) name:@"btn0" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(btn1) name:@"btn1" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(btn2) name:@"btn2" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(btn3) name:@"btn3" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(btn4) name:@"btn4" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(btn5) name:@"btn5" object:nil];
+}
+
+- (void)btn0
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor blueColor];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)btn1
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)btn2
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)btn3
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)btn4
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)btn5
+{
+    UIViewController *vc = [[UIViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
+// 移除通知
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"btn0" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"btn1" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"btn2" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"btn3" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"btn4" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"btn5" object:nil];
 }
 
 @end
